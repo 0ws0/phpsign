@@ -1,0 +1,20 @@
+{
+    "name": "0ws0/phpsign",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vision",
+            "email": "sunshine77580@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=7.0.0"
+        },
+    "autoload": {
+                  "psr-4":{
+                        "SignLib\\":"src/"
+                  }
+                }
+}
