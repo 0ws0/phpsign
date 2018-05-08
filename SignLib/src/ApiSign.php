@@ -1,6 +1,6 @@
 <?php
 namespace SignLib;
-
+use GuzzleHttp\Client;
 class ApiSign
 {
     const APP_SECRET = '1-13y!';
@@ -8,7 +8,9 @@ class ApiSign
     
     function test()
 	{
-        echo 'hello world!';
+        $client = new Client();
+        $res = $client->request('GET', 'https://api.github.com/repos/guzzle/guzzle');
+        echo $res->getStatusCode();
 	}
     /*
     $array = [
